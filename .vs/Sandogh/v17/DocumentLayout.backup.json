@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\A.saei\\source\\repos\\Sandogh\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3F3C0178-E5BE-410F-A43B-CE4C06E4D89E}|Sandogh\\Sandogh.csproj|c:\\users\\a.saei\\source\\repos\\sandogh\\sandogh\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F3C0178-E5BE-410F-A43B-CE4C06E4D89E}|Sandogh\\Sandogh.csproj|solutionrelative:sandogh\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F3C0178-E5BE-410F-A43B-CE4C06E4D89E}|Sandogh\\Sandogh.csproj|c:\\users\\a.saei\\source\\repos\\sandogh\\sandogh\\areas\\admin\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F3C0178-E5BE-410F-A43B-CE4C06E4D89E}|Sandogh\\Sandogh.csproj|solutionrelative:sandogh\\areas\\admin\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F3C0178-E5BE-410F-A43B-CE4C06E4D89E}|Sandogh\\Sandogh.csproj|c:\\users\\a.saei\\source\\repos\\sandogh\\sandogh\\areas\\admin\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3F3C0178-E5BE-410F-A43B-CE4C06E4D89E}|Sandogh\\Sandogh.csproj|solutionrelative:sandogh\\areas\\admin\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,46 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\A.saei\\source\\repos\\Sandogh\\Sandogh\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Sandogh\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\A.saei\\source\\repos\\Sandogh\\Sandogh\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Sandogh\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T09:44:23.75Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\A.saei\\source\\repos\\Sandogh\\Sandogh\\Areas\\Admin\\Views\\Users\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Sandogh\\Areas\\Admin\\Views\\Users\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\A.saei\\source\\repos\\Sandogh\\Sandogh\\Areas\\Admin\\Views\\Users\\Edit.cshtml",
-              "RelativeToolTip": "Sandogh\\Areas\\Admin\\Views\\Users\\Edit.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T09:34:58.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\A.saei\\source\\repos\\Sandogh\\Sandogh\\Areas\\Admin\\Views\\Users\\Create.cshtml",
-              "RelativeDocumentMoniker": "Sandogh\\Areas\\Admin\\Views\\Users\\Create.cshtml",
-              "ToolTip": "C:\\Users\\A.saei\\source\\repos\\Sandogh\\Sandogh\\Areas\\Admin\\Views\\Users\\Create.cshtml",
-              "RelativeToolTip": "Sandogh\\Areas\\Admin\\Views\\Users\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T09:19:00.204Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }
