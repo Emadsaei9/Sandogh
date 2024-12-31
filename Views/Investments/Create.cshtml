@@ -1,0 +1,92 @@
+﻿@model Sandogh.Models.Investment
+
+@{
+    ViewData["Title"] = "ایجاد سرمایه‌گذاری";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center">ایجاد سرمایه‌گذاری</h1>
+
+<h4 class="text-center">فرم ثبت سرمایه‌گذاری جدید</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- انتخاب عضو -->
+            <div class="form-group">
+                <label asp-for="MemberId" class="control-label">نام عضو</label>
+                <select asp-for="MemberId" class="form-control" asp-items="ViewBag.MemberId">
+                    <option value="">انتخاب کنید</option>
+                </select>
+                <span asp-validation-for="MemberId" class="text-danger"></span>
+            </div>
+
+            <!-- مقدار سرمایه‌گذاری -->
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label">مقدار سرمایه‌گذاری</label>
+                <input asp-for="Amount" class="form-control" placeholder="مقدار سرمایه‌گذاری را وارد کنید" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+
+            <!-- نوع سرمایه‌گذاری -->
+            <div class="form-group">
+                <label asp-for="InvestmentType" class="control-label">نوع سرمایه‌گذاری</label>
+                <input asp-for="InvestmentType" class="form-control" placeholder="نوع سرمایه‌گذاری را وارد کنید" />
+                <span asp-validation-for="InvestmentType" class="text-danger"></span>
+            </div>
+
+            <!-- نرخ سود -->
+            <div class="form-group">
+                <label asp-for="InterestRate" class="control-label">نرخ سود</label>
+                <input asp-for="InterestRate" class="form-control" placeholder="نرخ سود را وارد کنید" />
+                <span asp-validation-for="InterestRate" class="text-danger"></span>
+            </div>
+
+            <!-- تاریخ شروع -->
+            <div class="form-group">
+                <label asp-for="StartDate" class="control-label">تاریخ شروع</label>
+                <input asp-for="StartDate" class="form-control" type="date" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+            </div>
+
+            <!-- تاریخ پایان -->
+            <div class="form-group">
+                <label asp-for="EndDate" class="control-label">تاریخ پایان</label>
+                <input asp-for="EndDate" class="form-control" type="date" />
+                <span asp-validation-for="EndDate" class="text-danger"></span>
+            </div>
+
+            <!-- وضعیت -->
+            <div class="form-group">
+                <label asp-for="Status" class="control-label">وضعیت</label>
+                <input asp-for="Status" class="form-control" placeholder="وضعیت را وارد کنید" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+
+            <!-- توضیحات -->
+            <div class="form-group">
+                <label asp-for="Note" class="control-label">توضیحات</label>
+                <textarea asp-for="Note" class="form-control" placeholder="توضیحات بیشتر را وارد کنید"></textarea>
+                <span asp-validation-for="Note" class="text-danger"></span>
+            </div>
+
+            <!-- دکمه ارسال -->
+            <div class="form-group text-center">
+                <input type="submit" value="ایجاد" class="btn btn-success btn-lg" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="text-center">
+    <a asp-action="Index" class="btn btn-primary btn-lg">بازگشت به لیست</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

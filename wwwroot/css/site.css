@@ -1,0 +1,152 @@
+﻿/* اضافه کردن فونت IranSans */
+@font-face {
+    font-family: 'IranSans';
+    src: url('../fonts/IranSans__Regular.woff2') format('woff2'), url('../fonts/IranSans__Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../webfonts/fa-solid-900.eot');
+    src: url('../webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'), url('../webfonts/fa-solid-900.woff2') format('woff2'), url('../webfonts/fa-solid-900.woff') format('woff'), url('../webfonts/fa-solid-900.ttf') format('truetype'), url('../webfonts/fa-solid-900.svg?v=5.15.3#fontawesome') format('svg');
+}
+/* تنظیم فونت پیش‌فرض برای تمام عناصر صفحه */
+* {
+    font-family: 'IranSans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0; /* رنگ پس‌زمینه */
+    /*background-image:   url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none"/><circle cx="50" cy="50" r="40" fill="rgba(106, 17, 203, 0.1)"/></svg>');*/
+    background-size: 50px 50px; /* اندازه الگو */
+    /*background-color: #f4f4f4;*/
+    padding: 20px;
+    direction: rtl;
+    text-align: right;
+    height: 100%; /* تعیین ارتفاع 100% برای body */
+    margin-bottom: 60px;
+}
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+.modal-header .close {
+    margin: -1rem auto -1rem -1rem;
+}
+
+.form-check {
+    padding-right: 1.25rem;
+    padding-left: 0;
+}
+
+.form-check-input {
+    margin-right: -1.25rem;
+    margin-left: 0;
+}
+.icon {
+    font-family: 'Font Awesome 5 Free'; /* استفاده از فونت Font Awesome */
+    color: #007bff; /* رنگ آیکون */
+}
+
+h4 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+p {
+    color: #6c757d; /* رنگ متن */
+}
+
+.custom-card {
+    border-radius: 15px; /* حاشیه خمیده */
+    transition: transform 0.3s ease; /* افکت انتقال */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* سایه */
+    margin-bottom: 15px;
+}
+
+.custom-card:hover {
+    transform: scale(1.05); /* بزرگنمایی هنگام قرار گرفتن ماوس */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* سایه بیشتر هنگام بزرگنمایی */
+}
+
+table.dataTable thead th {
+    background-color: #007bff; /* رنگ پس‌زمینه هدر */
+    color: white; /* رنگ متن هدر */
+}
+
+table.dataTable tbody tr:hover {
+    background-color: #f1f1f1; /* رنگ پس‌زمینه ردیف‌ها در حالت هاور */
+}
+.dataTable {
+    width: 100%; /* عرض کامل */
+    border-collapse: collapse; /* حذف فاصله بین سلول‌ها */
+    margin: 20px 0; /* فاصله از بالا و پایین */
+}
+
+    /* استایل برای سطرهای جدول */
+    .dataTable tr {
+        transition: background-color 0.3s; /* افکت انتقال */
+    }
+
+        /* رنگ پس‌زمینه سطرها */
+        .dataTable tr:nth-child(even) {
+            background-color: #f9f9f9; /* رنگ پس‌زمینه سطرهای زوج */
+        }
+
+        .dataTable tr:hover {
+            background-color: #e0f7fa; /* رنگ پس‌زمینه هنگام قرار گرفتن ماوس */
+        }
+
+    /* استایل برای سلول‌های جدول */
+    .dataTable td, .dataTable th {
+        padding: 12px; /* فاصله داخلی */
+        text-align: right; /* تراز متن به سمت چپ */
+        border: 1px solid #ddd; /* حاشیه سلول‌ها */
+    }
+
+    /* استایل برای هدر جدول */
+    .dataTable th {
+        background-color: #007bff; /* رنگ پس‌زمینه هدر */
+        color: white; /* رنگ متن هدر */
+        font-weight: bold; /* بولد کردن متن */
+    }
+    table.dataTable thead th {
+        padding: 5px; /* تنظیم پدینگ برای کاهش ارتفاع */
+        font-size: 14px; /* تنظیم اندازه فونت (اختیاری) */
+    }
+
+    /* استایل برای متن */
+.dataTable td {
+    color: #333; /* رنگ متن */
+    font-size: 14px; /* تنظیم اندازه فونت (اختیاری) */
+}
+
+table.dataTable tbody tr {
+    height: 30px; /* تنظیم ارتفاع سطر */
+}
+
+table.dataTable tbody td {
+    padding: 5px; /* تنظیم پدینگ برای کاهش ارتفاع */
+}
+
+table.dataTable tbody button {
+    padding: 3px 6px; /* تنظیم پدینگ دکمه‌ها */
+    font-size: 12px; /* تنظیم اندازه فونت دکمه‌ها */
+}

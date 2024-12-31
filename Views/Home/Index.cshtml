@@ -1,0 +1,133 @@
+﻿@{
+    ViewData["Title"] = "خوش آمدید";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4" style="font-family: 'Vazir', sans-serif; color: #003f2a;">به صندوق خوش آمدید!</h1>
+    <p class="text-center mb-5" style="font-size: 1.2rem; color: #005f40;">ما در اینجا هستیم تا به شما در مدیریت مالی و تسهیلات کمک کنیم.</p>
+
+    <div class="row g-4">
+        <!-- Card 1: مدیریت کاربران (نمایش همه کاربران) -->
+        <div class="col-md-3">
+            <div class="card custom-card shadow-lg rounded-3" onclick="location.href='@Url.Action("index", "Members")';" style="cursor: pointer;">
+                <div class="card-body text-center">
+                    <div class="icon mb-3">
+                        <i class="fas fa-users-cog fa-4x text-teal"></i> <!-- آیکون مدیریت کاربران -->
+                    </div>
+                    <h4 class="card-title">مدیریت کاربران</h4>
+                    <p class="card-text">نمایش لیست تمامی کاربران صندوق</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: مدیریت اعضا (اضافه کردن اعضا جدید) -->
+        <div class="col-md-3">
+            <div class="card custom-card shadow-lg rounded-3" onclick="location.href='@Url.Action("Create", "Members")';" style="cursor: pointer;">
+                <div class="card-body text-center">
+                    <div class="icon mb-3">
+                        <i class="fas fa-user-plus fa-4x text-gold"></i> <!-- آیکون اضافه کردن کاربر -->
+                    </div>
+                    <h4 class="card-title">مدیریت اعضا</h4>
+                    <p class="card-text">افزودن اعضای جدید به صندوق</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: دریافت و پرداخت (امور مالی) -->
+        <div class="col-md-3">
+            <div class="card custom-card shadow-lg rounded-3" style="cursor: pointer;">
+                <div class="card-body text-center">
+                    <div class="icon mb-3">
+                        <i class="fas fa-money-bill-wave fa-4x text-red"></i> <!-- آیکون پول نقد -->
+                    </div>
+                    <h4 class="card-title">دریافت و پرداخت</h4>
+                    <p class="card-text">پرداخت‌ها و دریافت‌ها را به سادگی و با امنیت انجام دهید.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4: اعطای تسهیلات (پرداخت وام) -->
+        <div class="col-md-3">
+            <div class="card custom-card shadow-lg rounded-3" onclick="location.href='@Url.Action("Details", "Members")';" style="cursor: pointer;">
+                <div class="card-body text-center">
+                    <div class="icon mb-3">
+                        <i class="fas fa-hand-holding-usd fa-4x text-emerald"></i> <!-- آیکون اعطای تسهیلات -->
+                    </div>
+                    <h4 class="card-title">اعطای تسهیلات</h4>
+                    <p class="card-text">تسهیلات مالی را به اعضای خود اعطا کنید و روند کار را تسهیل کنید.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5: پرداخت اقساط (یادآوری اقساط) -->
+        <div class="col-md-3">
+            <div class="card custom-card shadow-lg rounded-3" style="cursor: pointer;">
+                <div class="card-body text-center">
+                    <div class="icon mb-3">
+                        <i class="fas fa-calendar-check fa-4x text-indigo"></i> <!-- آیکون تقویم -->
+                    </div>
+                    <h4 class="card-title">پرداخت اقساط</h4>
+                    <p class="card-text">پرداخت اقساط را به راحتی مدیریت کنید و یادآوری‌ها را تنظیم کنید.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CSS برای افکت‌ها -->
+<style>
+    .custom-card {
+        border: none;
+        background-color: #ffffff;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .custom-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .custom-card .icon {
+            background-color: #f4f4f4;
+            border-radius: 50%;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .custom-card:hover .icon {
+            transform: scale(1.1);
+        }
+
+        .custom-card .card-title {
+            color: #003f2a;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .custom-card .card-text {
+            color: #34495e;
+            font-size: 1rem;
+        }
+
+        /* رنگ‌های آیکون‌ها */
+        .custom-card .text-teal {
+            color: #008e8d !important; /* سبز ایرانی */
+        }
+
+        .custom-card .text-gold {
+            color: #d4af37 !important; /* طلایی */
+        }
+
+        .custom-card .text-red {
+            color: #c0392b !important; /* قرمز ایرانی */
+        }
+
+        .custom-card .text-emerald {
+            color: #2ecc71 !important; /* سبز زمردی */
+        }
+
+        .custom-card .text-indigo {
+            color: #4b0082 !important; /* بنفش ایرانی */
+        }
+</style>

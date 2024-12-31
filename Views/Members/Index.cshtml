@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Sandogh.Models.Member>
+
+@{
+    ViewData["Title"] = "مدیریت اعضا";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center">لیست اعضای صندوق</h1>
+
+    <div class="text-end mb-3">
+        <a class="btn btn-primary" asp-action="Create">
+            <i class="fas fa-user-plus"></i> افزودن عضو جدید
+        </a>
+    </div>
+
+    <table class="table table-bordered table-striped text-right">
+        <thead class="table-dark">
+            <tr>
+                <th>کد ملی</th>
+                <th>نام کامل</th>
+                <th>موبایل</th>
+                <th>تلفن</th>
+                <th>آدرس</th>
+                <th>تاریخ تولد</th>
+                <th>شماره شناسنامه</th>
+                <th>نام پدر</th>
+                <th>محل تولد</th>
+                <th>شماره حساب</th>
+                <th>عملیات</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.NationalCode)</td>
+                    <td>@Html.DisplayFor(modelItem => item.FullName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Mobile)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Tel)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Address)</td>
+                    <td>@Html.DisplayFor(modelItem => item.BirthDate)</td>
+                    <td>@Html.DisplayFor(modelItem => item.BirthCertificateNo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.FatherName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.BirthPlace)</td>
+                    <td>@Html.DisplayFor(modelItem => item.AccountNumber)</td>
+                    <td>
+                        <!-- استفاده از آیکون‌ها به جای متن -->
+                        <a class="btn btn-warning btn-sm" asp-action="Edit" asp-route-id="@item.MemberId">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@item.MemberId">
+                            <i class="fas fa-info-circle"></i>
+                        </a>
+                        <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@item.MemberId">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                        <a class="btn btn-success btn-sm" asp-action="Index" asp-controller="Investments" asp-route-id="@item.MemberId">
+                            <i class="fas fa-dollar-sign"></i>
+                        </a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
